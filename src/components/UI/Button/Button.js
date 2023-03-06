@@ -1,12 +1,11 @@
-import React from 'react';
+import React from "react";
+import { ButtonStyled } from "./Button.style";
 
-import './Button.css';
-
-const Button = props => {
+const Button = (props) => {
   return (
-    <button type={props.type} className="button" onClick={props.onClick}>
+    <ButtonStyled type={props.type} onClick={props.onClick}>
       {props.children}
-    </button>
+    </ButtonStyled>
   );
 };
 
